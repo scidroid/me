@@ -10,11 +10,11 @@ export const config = {
 };
 
 const regularFont = fetch(
-  new URL("../../public/fonts/Inter-Regular.ttf", import.meta.url)
+  new URL(`${process.env.NEXT_PUBLIC_URL}/fonts/Inter-Regular.ttf`)
 ).then(res => res.arrayBuffer());
 
 const boldFont = fetch(
-  new URL("../../public/fonts/Inter-Bold.ttf", import.meta.url)
+  new URL(`${process.env.NEXT_PUBLIC_URL}/fonts/Inter-Bold.ttf`)
 ).then(res => res.arrayBuffer());
 
 const handler = async (req: NextRequest) => {
@@ -31,7 +31,7 @@ const handler = async (req: NextRequest) => {
         <div tw="flex items-center justify-center w-full h-full rounded-xl bg-white">
           <img
             tw="rounded-full w-72 mr-12"
-            src="http://localhost:3000/avatar.png"
+            src={`${process.env.NEXT_PUBLIC_URL}/avatar.png`}
           />
           <div tw="flex flex-col">
             <h1 tw="font-bold text-6xl max-w-140">{title}</h1>
