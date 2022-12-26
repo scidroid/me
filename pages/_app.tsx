@@ -2,7 +2,6 @@ import type { AppProps } from "next/app";
 
 import { Inter } from "@next/font/google";
 import { Analytics } from "@vercel/analytics/react";
-import "animate.css";
 import { DefaultSeo } from "next-seo";
 import React from "react";
 import SEO from "seo.config";

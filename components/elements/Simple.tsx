@@ -6,9 +6,7 @@ type Props = {
 
 const Simple: React.FC<Props> = ({ children }) => {
   return (
-    <section
-      className={`animate__animated animate__fadeInUp min-h-96 w-full m-4 p-12 rounded-xl large:max-w-sm bg-white`}
-    >
+    <section className="animate-fade-in-up min-h-96 w-full m-4 p-12 rounded-xl large:max-w-sm bg-white hover:shadow-xl transition-shadow">
       {children}
     </section>
   );

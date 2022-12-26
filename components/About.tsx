@@ -29,7 +29,7 @@ const About: React.FC = () => {
       after: " Top 50"
     },
     {
-      link: "https://fedesoft.org/vi-concurso-nacional-de-programacion-para-colegios-2022/",
+      link: "https://github.com/asofiorg/searchy",
       abbreviation: "CNPC",
       full: "National Programming Contest",
       before: "",
