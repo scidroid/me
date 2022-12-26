@@ -73,22 +73,21 @@ const About: React.FC = () => {
             </p>
           </article>
           <article className="w-full mt-8 large:mt-0 large:w-auto large:ml-8">
-            <ul className="flex flex-col justify-between min-h-full w-full large:w-auto">
+            <div className="flex flex-col justify-between h-full w-full large:w-auto">
               {links.map(({ link, abbreviation, full, before, after }) => (
                 <a
                   target="_blank"
                   rel="noreferrer"
                   href={link}
                   key={abbreviation}
+                  className="border text-lg font-medium rounded-xl text-center p-2 m-2 w-full hover:bg-slate-100"
                 >
-                  <li className="border text-lg font-medium rounded-xl text-center p-2 m-2 w-full hover:bg-slate-100">
-                    {before}
-                    <abbr title={full}>{abbreviation}</abbr>
-                    {after}
-                  </li>
+                  {before}
+                  <abbr title={full}>{abbreviation}</abbr>
+                  {after}
                 </a>
               ))}
-            </ul>
+            </div>
           </article>
         </div>
       </div>

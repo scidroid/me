@@ -29,10 +29,10 @@ const Featured: React.FC<Props> = ({
       <div className="flex flex-col large:flex-row items-center justify-between">
         <Image
           src={image}
-          width={600}
-          height={1200}
+          width={384}
+          height={160}
           alt={name}
-          className="w-80 h-40 rounded-xl object-cover"
+          className="w-96 h-40 rounded-xl object-cover"
         />
         <div className="large:ml-8">
           <h3 className="font-bold text-center text-2xl my-2">{name}</h3>
@@ -49,7 +49,7 @@ const Featured: React.FC<Props> = ({
           )}
           {seeMoreUrl && (
             <Link href={seeMoreUrl}>
-              <Button>Read More</Button>
+              <Button>Read this article</Button>
             </Link>
           )}
         </div>

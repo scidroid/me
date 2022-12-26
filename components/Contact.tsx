@@ -40,16 +40,20 @@ const Social: React.FC = () => {
         <h2 className="text-center w-full mb-4 font-bold text-2xl">
           Follow me
         </h2>
-        <ul className="flex flex-col justify-between min-h-full w-full">
+        <div className="flex flex-col justify-between min-h-full w-full">
           {links.map(({ name, url, icon, handle }) => (
-            <a target="_blank" rel="noreferrer" href={url} key={name}>
-              <li className="border text-xl font-medium rounded-xl text-center p-2 m-1 w-full hover:bg-slate-100 flex items-center justify-center">
-                {icon}
-                <p className="ml-2">{handle}</p>
-              </li>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href={url}
+              key={name}
+              className="border text-xl font-medium rounded-xl text-center p-2 m-1 w-full hover:bg-slate-100 flex items-center justify-center"
+            >
+              {icon}
+              <p className="ml-2">{handle}</p>
             </a>
           ))}
-        </ul>
+        </div>
       </div>
     </Simple>
   );
@@ -123,7 +127,11 @@ const ContactForm: React.FC = () => {
               {...register("message", { required: true })}
             />
           </label>
-          <Button className="-mt-4" type="submit" disabled={submitStatus != "idle"}>
+          <Button
+            className="-mt-4"
+            type="submit"
+            disabled={submitStatus != "idle"}
+          >
             {submitStatus === "submitting"
               ? "Submitting..."
               : submitStatus === "success"

@@ -26,8 +26,8 @@ const Content: React.FC<Props> = ({
       <div className="flex flex-col items-center justify-between">
         <Image
           src={image}
-          width={600}
-          height={1200}
+          width={384}
+          height={160}
           alt={name}
           quality={100}
           className="w-96 h-40 rounded-xl object-cover object-top"
@@ -49,7 +49,7 @@ const Content: React.FC<Props> = ({
           )}
           {seeMoreUrl && (
             <Link href={seeMoreUrl}>
-              <Button>Read More</Button>
+              <Button>Read this article</Button>
             </Link>
           )}
         </div>
