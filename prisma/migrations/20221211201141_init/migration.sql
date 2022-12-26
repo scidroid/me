@@ -1,0 +1,5 @@
+-- CreateEnum
+CREATE TYPE "STATUS" AS ENUM ('DRAFT', 'PUBLISHED');
+
+-- AlterTable
+ALTER TABLE "Post" ADD COLUMN     "status" "STATUS" NOT NULL DEFAULT 'DRAFT';

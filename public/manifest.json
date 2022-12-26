@@ -1,0 +1,22 @@
+{
+  "theme_color": "#bbf7cf",
+  "background_color": "#bbf7cf",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "name": "Juan Almanza",
+  "short_name": "Juan Almanza",
+  "description": "The Juan Almanza's home page",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
