@@ -1,8 +1,11 @@
+import { usePrefersReducedMotion } from "hooks/motion";
 import React, { useEffect, useState } from "react";
 
 import Double from "./elements/Double";
 
 const About: React.FC = () => {
+  const prefersReducedMotion = usePrefersReducedMotion();
+
   const calcAge = () => {
     const birthday = +new Date("August 16, 2007");
     const ageWithDecimals = ((Date.now() - birthday) / 31557600000).toFixed(9);
@@ -13,12 +16,16 @@ const About: React.FC = () => {
   const [age, setAge] = useState("15");
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setAge(calcAge());
-    }, 100);
+    if (!prefersReducedMotion) {
+      const interval = setInterval(() => {
+        setAge(calcAge());
+      }, 100);
 
-    return () => clearInterval(interval);
-  }, []);
+      return () => clearInterval(interval);
+    } else {
+      setAge(calcAge());
+    }
+  }, [prefersReducedMotion]);
 
   const links = [
     {
