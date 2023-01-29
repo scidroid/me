@@ -1,12 +1,73 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
+
+# Juan Almanza's Website
+
+**_My home in the internet_**
+
+</div>
+
+<div align="center">
+
+![](https://img.shields.io/badge/Contributions-Welcome-brightgreen.svg)
+![](https://img.shields.io/badge/Maintained%3F-Yes-brightgreen.svg)
+
+</div>
+
+<div align="center">
+
+![Website Preview](https://raw.githubusercontent.com/scidroid/me/main/public/screenshot.png)
+
+</div>
+
+This is the source code for my personal website. It is built using [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/), and [TypeScript](https://www.typescriptlang.org/).
+
+Also, I use [Vercel](https://vercel.com/) to deploy the website and [Sanity](https://www.sanity.io/) to manage the content.
+
+In the `/card` directory, you can find the source code for my bussiness card. If you want to try it you can just run `npx scidroid` in your terminal.
+
+## Features
+
+- [] (WIP) iCloud like design
+- [x] About me
+- [x] Projects
+- [x] Blog
+- [x] Contact
+- [x] Comments
+- [x] CMS Integration
+- [x] Now Playing
+- [x] Thought of the day
+- [x] Open Graph Image generation
+- [x] PWA
+- [x] Contact backend with a database and email service. Built using react-email.
+- [x] Analytics
+- [] RSS Feed
+- [] Sitemap
+- [] Live health data
+- [] Terminal easter egg
+
+For information about the bussiness card, check the README.md file in the `/card` directory.
 
 ## Getting Started
 
-First, run the development server:
+First do you need to add the environment variables. You can do this by creating a `.env.local` file in the root directory. You can use the `.env.example` file as a template.
+
+You need 5 environment variables:
+
+- `DATABASE_URL` is the URL of the database where the contact form data will be stored. You must use a PostgreSQL database. This is needed for the contact form and in-site analytics.
+- `MAILGUN_API_KEY` is the API key of your Mailgun account. This is needed for the contact form.
+- `SPOTIFY_CLIENT_ID` is the client ID of your Spotify app. This is needed for the Now Playing section.
+- `SPOTIFY_CLIENT_SECRET` is the client secret of your Spotify app. This is needed for the Now Playing section.
+- `SANITY_WRITE_TOKEN` is the write token of your Sanity project. This is needed for the CMS integration.
+
+Then, install the dependencies:
 
 ```bash
-npm run dev
-# or
+yarn
+```
+
+Finally, run the development server:
+
+```bash
 yarn dev
 ```
 
@@ -14,21 +75,39 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Production
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+To build the website for production, run:
 
-## Learn More
+```bash
+yarn build
+```
 
-To learn more about Next.js, take a look at the following resources:
+Then, to start the production server, run:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+yarn start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+This repository has a deployment configuration for Vercel. So to deploy the website, just push the changes to the `main` branch.
 
-## Deploy on Vercel
+But, if you want to deploy the website in another platform, you need to add the environment variables to the production server and just run the `yarn build` and `yarn start` commands.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+If you want to deploy it in Vercel, you can just run `vercel` in the root directory and follow the instructions.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- [Next.js](https://nextjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vercel](https://vercel.com/)
+- [Sanity](https://www.sanity.io/)
+- [react-email](https://react.email/)
+
+## Contact
+
+If you want to contact me you can reach me at [hi@scidroid.co](mailto:hi@scidroid.co).
