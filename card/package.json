@@ -1,0 +1,23 @@
+{
+  "name": "scidroid",
+  "version": "1.0.6",
+  "description": "My business card",
+  "repository": "https://github.com/scidroid/me/tree/main/card",
+  "author": "Juan Almanza <hi@scidroid.co>",
+  "license": "MIT",
+  "private": false,
+  "type": "module",
+  "bin": "./index.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "boxen": "^7.0.1",
+    "chalk": "5.2.0",
+    "clear": "0.1.0",
+    "inquirer": "9.1.4",
+    "node-fetch": "3.3.0",
+    "open": "8.4.0"
+  }
+}

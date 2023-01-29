@@ -19,6 +19,12 @@
 
 </div>
 
+> This website is a beta and is Work In Progress. You can see the actual version in [scidroid.co](https://scidroid.co/).
+>
+> Try the beta live version in [beta.scidroid.co](https://beta.scidroid.co/)
+>
+> Also, you can try my bussiness card by running `npx scidroid` in your terminal.
+
 This is the source code for my personal website. It is built using [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/), and [TypeScript](https://www.typescriptlang.org/).
 
 Also, I use [Vercel](https://vercel.com/) to deploy the website and [Sanity](https://www.sanity.io/) to manage the content.
