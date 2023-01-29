@@ -33,7 +33,7 @@ In the `/card` directory, you can find the source code for my bussiness card. If
 
 ## Features
 
-- [] (WIP) iCloud like design
+- [ ] (WIP) iCloud like design
 - [x] About me
 - [x] Projects
 - [x] Blog
@@ -46,10 +46,10 @@ In the `/card` directory, you can find the source code for my bussiness card. If
 - [x] PWA
 - [x] Contact backend with a database and email service. Built using react-email.
 - [x] Analytics
-- [] RSS Feed
-- [] Sitemap
-- [] Live health data
-- [] Terminal easter egg
+- [ ] RSS Feed
+- [ ] Sitemap
+- [ ] Live health data
+- [ ] Terminal easter egg
 
 For information about the bussiness card, check the README.md file in the `/card` directory.
 
