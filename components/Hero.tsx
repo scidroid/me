@@ -10,7 +10,7 @@ const Hero: React.FC = () => {
       <div className="flex flex-col items-center justify-center">
         <Avatar />
         <h1 className="font-bold text-3xl mt-6">Juan Almanza</h1>
-        <p className="text-lg">Front-End Developer</p>
+        <p className="text-lg">Software Engineer</p>
         <a href="https://cv.scidroid.co" className="text-lg">
           <Button>Read my resume</Button>
         </a>

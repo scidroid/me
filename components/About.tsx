@@ -67,9 +67,9 @@ const About: React.FC = () => {
             <p className="mb-4">
               Hi! I&apos;m Juan, a{" "}
               <span className="font-mono font-medium">{age}</span> years old
-              Front-End developer based in Colombia building beautiful and
-              performant products. Building with Next.js, React, TypeScript and
-              more.
+              Software Engineer based in Colombia who is passionate about
+              building social projects to improve the lives of less privileged
+              communities.
             </p>
             <p>
               I started programming when I was 12 years old, when I tried to
